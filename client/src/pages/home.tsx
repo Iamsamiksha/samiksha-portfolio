@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
-import { Typewriter } from 'react-simple-typewriter';
+import { TypeAnimation } from 'react-type-animation';
 
 
 interface ContactFormData {
@@ -304,14 +304,13 @@ export default function Home() {
             
 
 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-blue-accent">
-  <Typewriter
-    words={['Samiksha Agrawal']}
-    loop={1}
-    cursor
-    cursorStyle="|"
-    typeSpeed={70}
-    deleteSpeed={50}
-    delaySpeed={1000}
+  <TypeAnimation
+    sequence={['Samiksha Agrawal', 1000]}
+    wrapper="span"
+    speed={50}
+    repeat={0}
+    cursor={true}
+    style={{ display: 'inline-block' }}
   />
 </h1>
 
