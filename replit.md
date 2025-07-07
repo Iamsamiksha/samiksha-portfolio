@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack portfolio website built with React and Express. The application features a sleek, dark-themed design showcasing Alex Johnson's work as a frontend developer. It includes sections for showcasing projects, skills, and contact information, with a responsive design that works across all devices.
+This is a modern full-stack portfolio website built with React and Express. The application features a sleek, dark-themed design showcasing Samiksha Agrawal's work as a software developer and data analyst. It includes sections for personal information, experience, skills, projects, and contact information, with a responsive design that works across all devices.
 
 ## System Architecture
 
@@ -110,7 +110,15 @@ shared/
 
 ```
 Changelog:
-- July 07, 2025. Initial setup
+- July 07, 2025. Initial setup with Alex Johnson template
+- July 07, 2025. Updated all content with Samiksha Agrawal's information:
+  - Personal details (name, title, description)
+  - Social media links (GitHub, LinkedIn, Email)
+  - About section with current internships
+  - Skills updated with actual tech stack
+  - Projects replaced with real portfolio projects
+  - Added Experience section with internship details
+  - Updated navigation to include experience section
 ```
 
 ## User Preferences

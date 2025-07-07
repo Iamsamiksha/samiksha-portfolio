@@ -51,70 +51,110 @@ export default function Home() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce platform built with React and Node.js, featuring user authentication, product catalog, and secure payment integration.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      liveDemo: "#",
-      codeUrl: "#",
+      title: "Today's Take – Daily Moments as Movie Scenes",
+      description: "Streamlit app that turns your daily mood or moment into a cinematic scene title, mood arc, and song using AI.",
+      technologies: ["Python", "Streamlit", "Gemini API"],
+      liveDemo: "https://todays-take.streamlit.app",
+      codeUrl: "https://github.com/Iamsamiksha/todays-take",
       gradient: "from-blue-600 to-cyan-600"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["React", "Socket.io", "Express"],
-      liveDemo: "#",
-      codeUrl: "#",
+      title: "DocuMentor – Contract Analyzer",
+      description: "AI tool that extracts insights, risks, and clauses from legal/business documents for better decision making.",
+      technologies: ["Express.js", "TypeScript", "MongoDB", "Redis", "Gemini API"],
+      liveDemo: "https://v0-professional-react-website-neon.vercel.app/detector",
+      codeUrl: "https://github.com/DocuMentorCo/Version1",
       gradient: "from-purple-600 to-pink-600"
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that provides current weather conditions, 5-day forecasts, and location-based weather alerts.",
-      technologies: ["JavaScript", "APIs", "CSS3"],
-      liveDemo: "#",
+      title: "SkinVision AI",
+      description: "Skin age and issue detection web app with AI-powered skincare report generation and personalized recommendations.",
+      technologies: ["Python", "OpenCV", "FastAPI", "TensorFlow", "React.js", "Astro"],
+      liveDemo: "https://skin-analysis-ui.vercel.app",
       codeUrl: "#",
       gradient: "from-emerald-600 to-teal-600"
+    },
+    {
+      id: 4,
+      title: "ScamShield – AI Spam Detector",
+      description: "LSTM-based spam classification system with 98.39% accuracy for detecting malicious messages and emails.",
+      technologies: ["Python", "TensorFlow", "FastAPI", "LSTM"],
+      liveDemo: "https://v0-professional-react-website-neon.vercel.app/detector",
+      codeUrl: "#",
+      gradient: "from-red-600 to-orange-600"
+    },
+    {
+      id: 5,
+      title: "Superstore Sales Dashboard",
+      description: "Interactive Tableau dashboard showcasing key sales metrics, trends, and business insights for data-driven decisions.",
+      technologies: ["Tableau", "SQL", "Data Analytics"],
+      liveDemo: "#",
+      codeUrl: "#",
+      gradient: "from-indigo-600 to-blue-600"
+    },
+    {
+      id: 6,
+      title: "Hey Furry Pals",
+      description: "Website for an AI-powered educational plushie built during my internship at Vruksh Ecosystem Foundation.",
+      technologies: ["React.js", "Next.js", "UI/UX Design"],
+      liveDemo: "https://furry-pals.vercel.app",
+      codeUrl: "#",
+      gradient: "from-pink-600 to-purple-600"
     }
   ];
 
   const skillCategories: SkillCategory[] = [
     {
-      title: "Frontend",
+      title: "Languages",
       icon: "fas fa-code",
       color: "text-blue-accent",
       skills: [
-        { name: "HTML5 & CSS3", level: 4 },
-        { name: "JavaScript (ES6+)", level: 4 },
-        { name: "React.js", level: 3 },
-        { name: "Tailwind CSS", level: 4 }
+        { name: "Java", level: 4 },
+        { name: "Python", level: 4 },
+        { name: "JavaScript", level: 4 },
+        { name: "SQL", level: 4 },
+        { name: "C++", level: 3 }
       ]
     },
     {
-      title: "Backend & Tools",
-      icon: "fas fa-server",
+      title: "Frameworks & Libraries",
+      icon: "fas fa-layer-group",
       color: "text-cyan-accent",
       skills: [
-        { name: "Node.js", level: 3 },
-        { name: "MongoDB", level: 3 },
-        { name: "Git & GitHub", level: 4 },
-        { name: "REST APIs", level: 3 }
+        { name: "React.js", level: 4 },
+        { name: "Express.js", level: 4 },
+        { name: "Next.js", level: 3 },
+        { name: "Flask", level: 3 }
       ]
     },
     {
-      title: "Design & Others",
-      icon: "fas fa-palette",
+      title: "Databases & Cloud",
+      icon: "fas fa-database",
       color: "text-green-accent",
       skills: [
+        { name: "MongoDB", level: 4 },
+        { name: "MySQL", level: 4 },
+        { name: "Firebase", level: 3 },
+        { name: "AWS", level: 3 },
+        { name: "Redis", level: 3 }
+      ]
+    },
+    {
+      title: "Tools & Platforms",
+      icon: "fas fa-tools",
+      color: "text-purple-400",
+      skills: [
+        { name: "Git & GitHub", level: 5 },
+        { name: "Tableau", level: 4 },
         { name: "Figma", level: 4 },
-        { name: "Adobe XD", level: 3 },
-        { name: "Responsive Design", level: 4 },
-        { name: "UI/UX Principles", level: 3 }
+        { name: "Jupyter", level: 4 }
       ]
     }
   ];
 
-  const currentlyLearning = ["TypeScript", "Next.js", "GraphQL", "Docker"];
+  const currentlyLearning = ["TypeScript", "Next.js", "Gemini API", "Scalable ML deployment"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -195,10 +235,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-blue-accent font-mono">alex.dev</span>
+              <span className="text-xl font-bold text-blue-accent font-mono">samiksha.dev</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              {["home", "about", "skills", "projects", "contact"].map((section) => (
+              {["home", "about", "experience", "skills", "projects", "contact"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -227,7 +267,7 @@ export default function Home() {
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-dark-secondary border-t border-slate-800">
-              {["home", "about", "skills", "projects", "contact"].map((section) => (
+              {["home", "about", "experience", "skills", "projects", "contact"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -254,14 +294,14 @@ export default function Home() {
           <div className="mb-8">
             <p className="text-cyan-accent font-mono text-sm md:text-base mb-4">Hello, I'm</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-accent to-cyan-accent bg-clip-text text-transparent">
-              Alex Johnson
+              Samiksha Agrawal
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-8">
-              Frontend Developer & UI/UX Enthusiast
+              Software Developer | Data Analyst
             </h2>
             <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-              Passionate about creating beautiful, functional web experiences.
-              Fresh graduate with a strong foundation in modern web technologies and a keen eye for design.
+              Final-year Computer Science (AIML) student with a strong interest in building practical and impactful tech solutions. 
+              I enjoy developing web apps, working with data, and applying machine learning to solve real-world problems.
             </p>
           </div>
 
@@ -281,16 +321,13 @@ export default function Home() {
           </div>
 
           <div className="mt-16 flex justify-center space-x-6">
-            <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
+            <a href="https://github.com/Iamsamiksha" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
               <i className="fab fa-github"></i>
             </a>
-            <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
+            <a href="https://linkedin.com/in/samiksha-agrawal24" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
+            <a href="mailto:samiksha.code24@gmail.com" className="text-slate-400 hover:text-blue-accent transition-colors duration-200 text-2xl">
               <i className="fas fa-envelope"></i>
             </a>
           </div>
@@ -320,14 +357,13 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4 text-cyan-accent">My Story</h3>
                   <p className="text-slate-300 leading-relaxed mb-4">
-                    I'm a recent Computer Science graduate with a passion for frontend development and user experience design.
-                    My journey began with curiosity about how websites work, and it has evolved into a deep appreciation for
-                    clean code and beautiful interfaces.
+                    I enjoy building clean, meaningful products with code. My interests lie in web development, machine learning, 
+                    and data analysis. I'm always exploring new tools and techniques to bring ideas to life through tech.
                   </p>
                   <p className="text-slate-300 leading-relaxed">
-                    When I'm not coding, you can find me exploring new design trends, contributing to open-source projects,
-                    or experimenting with the latest web technologies. I believe in continuous learning and staying up-to-date
-                    with industry best practices.
+                    Currently interning as a Software Developer at Vruksh Ecosystem Foundation and as a Machine Learning Intern 
+                    at Global Next Consulting India Pvt Ltd, I'm gaining hands-on experience in building scalable solutions 
+                    and working with real-world datasets.
                   </p>
                 </CardContent>
               </Card>
@@ -335,14 +371,14 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="bg-dark-tertiary border-slate-700">
                   <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-blue-accent mb-2">15+</div>
+                    <div className="text-2xl font-bold text-blue-accent mb-2">8+</div>
                     <div className="text-slate-400 text-sm">Projects Completed</div>
                   </CardContent>
                 </Card>
                 <Card className="bg-dark-tertiary border-slate-700">
                   <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-cyan-accent mb-2">3+</div>
-                    <div className="text-slate-400 text-sm">Years Learning</div>
+                    <div className="text-2xl font-bold text-cyan-accent mb-2">2+</div>
+                    <div className="text-slate-400 text-sm">Years Experience</div>
                   </CardContent>
                 </Card>
               </div>
@@ -356,22 +392,22 @@ export default function Home() {
                     <div className="flex items-start space-x-3">
                       <i className="fas fa-code text-blue-accent mt-1"></i>
                       <div>
-                        <h4 className="font-medium text-slate-200">Frontend Development</h4>
-                        <p className="text-slate-400 text-sm">Building responsive and interactive web applications</p>
+                        <h4 className="font-medium text-slate-200">Full-Stack Development</h4>
+                        <p className="text-slate-400 text-sm">Building web applications with React, Express, and modern frameworks</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <i className="fas fa-palette text-cyan-accent mt-1"></i>
+                      <i className="fas fa-chart-line text-cyan-accent mt-1"></i>
                       <div>
-                        <h4 className="font-medium text-slate-200">UI/UX Design</h4>
-                        <p className="text-slate-400 text-sm">Creating intuitive and visually appealing interfaces</p>
+                        <h4 className="font-medium text-slate-200">Data Analysis</h4>
+                        <p className="text-slate-400 text-sm">Working with datasets and creating insights through data visualization</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <i className="fas fa-mobile-alt text-green-accent mt-1"></i>
+                      <i className="fas fa-brain text-green-accent mt-1"></i>
                       <div>
-                        <h4 className="font-medium text-slate-200">Responsive Design</h4>
-                        <p className="text-slate-400 text-sm">Ensuring great experiences across all devices</p>
+                        <h4 className="font-medium text-slate-200">Machine Learning</h4>
+                        <p className="text-slate-400 text-sm">Developing AI-powered applications and ML models</p>
                       </div>
                     </div>
                   </div>
@@ -383,14 +419,110 @@ export default function Home() {
                   <h3 className="text-xl font-semibold mb-4 text-cyan-accent">Education</h3>
                   <div className="space-y-3">
                     <div>
-                      <h4 className="font-medium text-slate-200">Bachelor of Computer Science</h4>
-                      <p className="text-slate-400 text-sm">University Name • 2020-2024</p>
-                      <p className="text-slate-500 text-sm">GPA: 3.8/4.0</p>
+                      <h4 className="font-medium text-slate-200">B.Tech in Computer Science – AIML</h4>
+                      <p className="text-slate-400 text-sm">Shri Ramdeobaba College Of Engineering and Management • Nov 2022 – July 2026</p>
+                      <p className="text-slate-500 text-sm">CGPA: 9.75/10.00 • Nagpur, Maharashtra</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="py-20 bg-dark-primary">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Work <span className="text-blue-accent">Experience</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              My professional journey and internship experiences in software development and machine learning
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {/* Software Developer Intern */}
+            <Card className="bg-dark-secondary border-slate-700">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-2">🌱 Software Developer Intern</h3>
+                    <p className="text-blue-accent font-medium">Vruksh Ecosystem Foundation</p>
+                    <p className="text-slate-400 text-sm">Sep 2024 – Feb 2025 | Remote (Pune)</p>
+                  </div>
+                </div>
+                <div className="space-y-3 mb-4">
+                  <p className="text-slate-300">
+                    • Built the official website for Hey Furry Pals, an AI-powered educational plushie
+                  </p>
+                  <p className="text-slate-300">
+                    • Designed and implemented data dashboards and UI/UX for Echelonify, improving product clarity and usability
+                  </p>
+                  <p className="text-slate-300">
+                    • Contributed to proposal decks, product workflows, and presentation strategies
+                  </p>
+                  <p className="text-slate-300">
+                    • Successfully completed a competitive internship and received a Letter of Recommendation
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-accent/10 text-blue-accent rounded-full text-sm">React.js</span>
+                  <span className="px-3 py-1 bg-cyan-accent/10 text-cyan-accent rounded-full text-sm">Next.js</span>
+                  <span className="px-3 py-1 bg-green-accent/10 text-green-accent rounded-full text-sm">UI/UX Design</span>
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://furry-pals.vercel.app" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-accent hover:text-blue-400 text-sm"
+                  >
+                    furry-pals.vercel.app ↗
+                  </a>
+                  <a 
+                    href="https://echelonify.vercel.app" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-cyan-accent hover:text-cyan-400 text-sm"
+                  >
+                    echelonify.vercel.app ↗
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Machine Learning Intern */}
+            <Card className="bg-dark-secondary border-slate-700">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-2">🤖 Machine Learning Intern</h3>
+                    <p className="text-cyan-accent font-medium">Global Next Consulting India Pvt Ltd (GNCIPL)</p>
+                    <p className="text-slate-400 text-sm">June 2025 – Present | Remote</p>
+                  </div>
+                </div>
+                <div className="space-y-3 mb-4">
+                  <p className="text-slate-300">
+                    • Assisting in the development and evaluation of machine learning models for business and client-specific needs
+                  </p>
+                  <p className="text-slate-300">
+                    • Working on data cleaning, exploratory analysis, and model deployment tasks using real-world datasets
+                  </p>
+                  <p className="text-slate-300">
+                    • Enhancing skills in ML workflows, applied AI, and scalable implementation practices
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-accent/10 text-blue-accent rounded-full text-sm">Python</span>
+                  <span className="px-3 py-1 bg-cyan-accent/10 text-cyan-accent rounded-full text-sm">Machine Learning</span>
+                  <span className="px-3 py-1 bg-green-accent/10 text-green-accent rounded-full text-sm">Data Analysis</span>
+                  <span className="px-3 py-1 bg-purple-400/10 text-purple-400 rounded-full text-sm">Model Deployment</span>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

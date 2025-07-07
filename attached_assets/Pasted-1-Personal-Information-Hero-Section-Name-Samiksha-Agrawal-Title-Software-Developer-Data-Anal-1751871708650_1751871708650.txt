@@ -1,0 +1,137 @@
+1. Personal Information (Hero Section)
+Name: Samiksha Agrawal
+
+Title: Software Developer | Data Analyst
+
+Description:
+Final-year Computer Science (AIML) student with a strong interest in building practical and impactful tech solutions. I enjoy developing web apps, working with data, and applying machine learning to solve real-world problems.
+
+Social Media Links:
+
+GitHub: github.com/Iamsamiksha
+
+LinkedIn: linkedin.com/in/samiksha-agrawal24
+
+Email: samiksha.code24@gmail.com
+
+2. About Section
+I enjoy building clean, meaningful products with code. My interests lie in web development, machine learning, and data analysis. I’m always exploring new tools and techniques to bring ideas to life through tech.
+
+Education:
+
+College: Shri Ramdeobaba College Of Engineering and Management
+
+Degree: B.Tech in Computer Science – AIML
+
+CGPA: 9.75 / 10.00
+
+Duration: Nov 2022 – July 2026
+
+Location: Nagpur, Maharashtra
+
+3. Skills Section
+Technical Skills:
+
+Languages: Java, Python, JavaScript, SQL, C++
+
+Frameworks & Libraries: React.js, Express.js, Next.js, Flask
+
+Databases & Cloud: MongoDB, MySQL, Firebase, AWS, Redis
+
+Tools & Platforms: Git, GitHub, Tableau, Jupyter, Figma, Excel
+
+CS Fundamentals: DBMS, DSA, OOPS, Linux
+
+Currently Learning: TypeScript, Next.js, Gemini API, Scalable ML deployment
+
+4. Experience Section
+🌱 Software Developer Intern — Vruksh Ecosystem Foundation
+Sep 2024 – Feb 2025 | Remote (Pune)
+
+Built the official website for Hey Furry Pals, an AI-powered educational plushie.
+
+Designed and implemented data dashboards and UI/UX for Echelonify, improving product clarity and usability.
+
+Contributed to proposal decks, product workflows, and presentation strategies.
+
+Successfully completed a competitive internship and received a Letter of Recommendation.
+
+🔗 View LOR
+
+Live Projects:
+
+furry-pals.vercel.app
+
+echelonify.vercel.app
+
+🤖 Machine Learning Intern — Global Next Consulting India Pvt Ltd (GNCIPL)
+June 2025 – Present | Remote
+
+Assisting in the development and evaluation of machine learning models for business and client-specific needs.
+
+Working on data cleaning, exploratory analysis, and model deployment tasks using real-world datasets.
+
+Enhancing skills in ML workflows, applied AI, and scalable implementation practices.
+
+5. Projects Section
+🎬 Today's Take – Daily Moments as Movie Scenes
+Streamlit app that turns your daily mood or moment into a cinematic scene title, mood arc, and song.
+
+Tech Stack: Python, Streamlit, Gemini API
+
+Live Demo: todays-take.streamlit.app
+
+Code Repo: github.com/Iamsamiksha/todays-take
+
+📝 DocuMentor – Contract Analyzer
+AI tool that extracts insights, risks, and clauses from legal/business documents.
+
+Tech Stack: ExpressJS, TypeScript, MongoDB, Redis, Gemini API
+
+Live Demo: v0-professional-react-website-neon.vercel.app/detector
+
+Code Repo: github.com/DocuMentorCo/Version1
+
+💡 SkinVision AI
+Skin age and issue detection web app with skincare report generation.
+
+Tech Stack: Python, OpenCV, FastAPI, TensorFlow, React.js, Astro
+
+Live Demo: skin-analysis-ui.vercel.app
+
+🔐 ScamShield – AI Spam Detector
+LSTM-based spam classification system with 98.39% accuracy.
+
+Tech Stack: Python, TensorFlow, FastAPI
+
+Live Demo: v0-professional-react-website-neon.vercel.app/detector
+
+📊 Superstore Sales Dashboard
+Interactive Tableau dashboard showcasing key sales metrics.
+
+Tech Stack: Tableau, SQL
+
+Live Dashboard: Superstore Dashboard
+
+🧸 Hey Furry Pals
+Website for an AI-powered educational plushie built during internship.
+
+Live Demo: furry-pals.vercel.app
+
+📈 Echelonify UI Dashboards
+Custom dashboards and improved UI/UX for operational insights.
+
+Live Demo: echelonify.vercel.app
+
+🤖 Was That Rude? – Tone Checker (Low Priority)
+A simple ML-based app that detects if a sentence sounds rude or toxic.
+
+Tech Stack: Flask, JavaScript, TF-IDF, Logistic Regression
+
+Code Repo: github.com/Iamsamiksha/was-that-rude
+
+6. Website Title & SEO
+Page Title: Samiksha Agrawal | Software Developer & Data Analyst
+
+Meta Description: Portfolio of Samiksha Agrawal – a passionate software developer and data analyst. Showcasing AI-based projects, data dashboards, and intelligent web applications.
+
