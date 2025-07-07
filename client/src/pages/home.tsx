@@ -6,6 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
+
 
 interface ContactFormData {
   name: string;
@@ -51,30 +54,31 @@ export default function Home() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Today's Take – Daily Moments as Movie Scenes",
-      description: "Streamlit app that turns your daily mood or moment into a cinematic scene title, mood arc, and song using AI.",
-      technologies: ["Python", "Streamlit", "Gemini API"],
-      liveDemo: "https://todays-take.streamlit.app",
-      codeUrl: "https://github.com/Iamsamiksha/todays-take",
-      gradient: "from-blue-600 to-cyan-600"
-    },
-    {
-      id: 2,
-      title: "DocuMentor – Contract Analyzer",
-      description: "AI tool that extracts insights, risks, and clauses from legal/business documents for better decision making.",
-      technologies: ["Express.js", "TypeScript", "MongoDB", "Redis", "Gemini API"],
-      liveDemo: "https://v0-professional-react-website-neon.vercel.app/detector",
-      codeUrl: "https://github.com/DocuMentorCo/Version1",
-      gradient: "from-purple-600 to-pink-600"
-    },
-    {
-      id: 3,
       title: "SkinVision AI",
       description: "Skin age and issue detection web app with AI-powered skincare report generation and personalized recommendations.",
       technologies: ["Python", "OpenCV", "FastAPI", "TensorFlow", "React.js", "Astro"],
       liveDemo: "https://skin-analysis-ui.vercel.app",
       codeUrl: "#",
       gradient: "from-emerald-600 to-teal-600"
+      
+    },
+    {
+      id: 2,
+      title: "DocuMentor – Contract Analyzer",
+      description: "AI tool that extracts insights, risks, and clauses from legal/business documents for better decision making.",
+      technologies: ["Express.js", "TypeScript", "MongoDB", "Redis", "Gemini API"],
+      liveDemo: "",
+      codeUrl: "https://github.com/DocuMentorCo/Version1",
+      gradient: "from-purple-600 to-pink-600"
+    },
+    {
+      id: 3,
+      title: "Today's Take – Daily Moments as Movie Scenes",
+      description: "Streamlit app that turns your daily mood or moment into a cinematic scene title, mood arc, and song using AI.",
+      technologies: ["Python", "Streamlit", "Gemini API"],
+      liveDemo: "https://todays-take.streamlit.app",
+      codeUrl: "https://github.com/Iamsamiksha/todays-take",
+      gradient: "from-blue-600 to-cyan-600"
     },
     {
       id: 4,
@@ -90,7 +94,7 @@ export default function Home() {
       title: "Superstore Sales Dashboard",
       description: "Interactive Tableau dashboard showcasing key sales metrics, trends, and business insights for data-driven decisions.",
       technologies: ["Tableau", "SQL", "Data Analytics"],
-      liveDemo: "#",
+      liveDemo: "https://public.tableau.com/app/profile/samiksha.agrawal5226/viz/Superstore_17428491360290/SuperstoreDashboard?publish=yes",
       codeUrl: "#",
       gradient: "from-indigo-600 to-blue-600"
     },
@@ -136,7 +140,6 @@ export default function Home() {
       skills: [
         { name: "MongoDB", level: 4 },
         { name: "MySQL", level: 4 },
-        { name: "Firebase", level: 3 },
         { name: "AWS", level: 3 },
         { name: "Redis", level: 3 }
       ]
@@ -154,7 +157,12 @@ export default function Home() {
     }
   ];
 
-  const currentlyLearning = ["TypeScript", "Next.js", "Gemini API", "Scalable ML deployment"];
+  const currentlyLearning = [
+  "Data Handling & Visualization",
+  "AI App Integration",
+  "Scalable ML Applications"
+];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -293,9 +301,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="mb-8">
             <p className="text-cyan-accent font-mono text-sm md:text-base mb-4">Hello, I'm</p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-accent to-cyan-accent bg-clip-text text-transparent">
-              Samiksha Agrawal
-            </h1>
+            
+
+<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-blue-accent">
+  <Typewriter
+    words={['Samiksha Agrawal']}
+    loop={1}
+    cursor
+    cursorStyle="|"
+    typeSpeed={70}
+    deleteSpeed={50}
+    delaySpeed={1000}
+  />
+</h1>
+
+
             <h2 className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-8">
               Software Developer | Data Analyst
             </h2>
@@ -312,12 +332,19 @@ export default function Home() {
             >
               View My Work
             </Button>
-            <Button
-              variant="outline"
-              className="border border-slate-600 hover:border-blue-accent text-slate-300 hover:text-blue-accent px-8 py-3 rounded-lg font-medium transition-all duration-200"
-            >
-              Download CV
-            </Button>
+            <a
+  href="https://drive.google.com/file/d/1s2pOx72nJ9eE_pdq_p7ZAyDhEzoDk7PT/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    variant="outline"
+    className="border border-slate-600 hover:border-blue-accent text-slate-300 hover:text-blue-accent px-8 py-3 rounded-lg font-medium transition-all duration-200"
+  >
+    Download CV
+  </Button>
+</a>
+
           </div>
 
           <div className="mt-16 flex justify-center space-x-6">
@@ -361,8 +388,8 @@ export default function Home() {
                     and data analysis. I'm always exploring new tools and techniques to bring ideas to life through tech.
                   </p>
                   <p className="text-slate-300 leading-relaxed">
-                    Currently interning as a Software Developer at Vruksh Ecosystem Foundation and as a Machine Learning Intern 
-                    at Global Next Consulting India Pvt Ltd, I'm gaining hands-on experience in building scalable solutions 
+                    Previously interned as a Software Developer at Vruksh Ecosystem Foundation; currently a ML Intern at Global Next Consulting India Private Limited,
+ I'm gaining hands-on experience in building scalable solutions 
                     and working with real-world datasets.
                   </p>
                 </CardContent>
@@ -371,13 +398,13 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="bg-dark-tertiary border-slate-700">
                   <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-blue-accent mb-2">8+</div>
+                    <div className="text-2xl font-bold text-blue-accent mb-2">10+</div>
                     <div className="text-slate-400 text-sm">Projects Completed</div>
                   </CardContent>
                 </Card>
                 <Card className="bg-dark-tertiary border-slate-700">
                   <CardContent className="p-4 text-center">
-                    <div className="text-2xl font-bold text-cyan-accent mb-2">2+</div>
+                    <div className="text-2xl font-bold text-cyan-accent mb-2">Fresher</div>
                     <div className="text-slate-400 text-sm">Years Experience</div>
                   </CardContent>
                 </Card>
@@ -439,7 +466,7 @@ export default function Home() {
               Work <span className="text-blue-accent">Experience</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              My professional journey and internship experiences in software development and machine learning
+              My professional journey and internship experiences
             </p>
           </div>
 
@@ -480,15 +507,15 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="text-blue-accent hover:text-blue-400 text-sm"
                   >
-                    furry-pals.vercel.app ↗
+                    furry-pals.com↗
                   </a>
                   <a 
-                    href="https://echelonify.vercel.app" 
+                    href="https://www.echelonify.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-cyan-accent hover:text-cyan-400 text-sm"
                   >
-                    echelonify.vercel.app ↗
+                    echelonify.com↗
                   </a>
                 </div>
               </CardContent>
@@ -539,7 +566,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
             {skillCategories.map((category, index) => (
               <Card key={index} className="bg-dark-secondary border-slate-700 hover:border-blue-accent/50 transition-all duration-300">
                 <CardContent className="p-6">
@@ -548,12 +576,12 @@ export default function Home() {
                     <h3 className="text-xl font-semibold">{category.title}</h3>
                   </div>
                   <div className="space-y-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex items-center justify-between">
-                        <span className="text-slate-300">{skill.name}</span>
-                        {renderSkillLevel(skill.level)}
-                      </div>
-                    ))}
+                   {category.skills.map((skill, skillIndex) => (
+  <div key={skillIndex} className="text-slate-300">
+    {skill.name}
+  </div>
+))}
+
                   </div>
                 </CardContent>
               </Card>
@@ -641,12 +669,18 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button
-              variant="outline"
-              className="border border-blue-accent text-blue-accent hover:bg-blue-accent hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-200"
-            >
-              View All Projects
-            </Button>
+            <a
+  href="https://github.com/Iamsamiksha"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    variant="outline"
+    className="border border-blue-accent text-blue-accent hover:bg-blue-accent hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-200"
+  >
+    View All Projects
+  </Button>
+</a>
           </div>
         </div>
       </section>
@@ -675,7 +709,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-slate-400 text-sm">Email</p>
-                      <p className="text-slate-200">alex.johnson@example.com</p>
+                      <p className="text-slate-200">samiksha.code24@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -684,7 +718,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-slate-400 text-sm">Phone</p>
-                      <p className="text-slate-200">+1 (555) 123-4567</p>
+                      <p className="text-slate-200">+91 7770849440</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -693,7 +727,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-slate-400 text-sm">Location</p>
-                      <p className="text-slate-200">New York, NY</p>
+                      <p className="text-slate-200">Nagpur, India</p>
                     </div>
                   </div>
                 </div>
@@ -702,16 +736,13 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-semibold mb-6 text-slate-200">Follow Me</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
+                  <a href="https://github.com/Iamsamiksha" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href="#" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
+                  <a href="https://www.linkedin.com/in/samiksha-agrawal24/" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
                     <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="#" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
+                  <a href="https://www.instagram.com/bansal_samiksha24/" className="w-12 h-12 bg-dark-secondary border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-accent hover:text-blue-accent transition-all duration-200">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </div>
@@ -802,23 +833,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-slate-400 text-sm">
-                © 2024 Alex Johnson. Built with passion and lots of coffee ☕
+                © 2025 Samiksha Agrawal. Built with passion and lots of coffee ☕
               </p>
             </div>
-            <div className="flex space-x-6">
-              <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200">
-                <i className="fab fa-github"></i>
-              </a>
-              <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-slate-400 hover:text-blue-accent transition-colors duration-200">
-                <i className="fas fa-envelope"></i>
-              </a>
-            </div>
+            
           </div>
         </div>
       </footer>

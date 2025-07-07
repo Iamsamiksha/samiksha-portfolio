@@ -60,7 +60,7 @@ Live Projects:
 
 furry-pals.vercel.app
 
-echelonify.vercel.app
+https://www.echelonify.com/
 
 🤖 Machine Learning Intern — Global Next Consulting India Pvt Ltd (GNCIPL)
 June 2025 – Present | Remote
@@ -117,7 +117,7 @@ Live Demo: furry-pals.vercel.app
 📈 Echelonify UI Dashboards
 Custom dashboards and improved UI/UX for operational insights.
 
-Live Demo: echelonify.vercel.app
+Live Demo:https://www.echelonify.com/
 
 🤖 Was That Rude? – Tone Checker (Low Priority)
 A simple ML-based app that detects if a sentence sounds rude or toxic.
