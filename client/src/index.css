@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --background: hsl(221, 39%, 11%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(215, 20%, 65%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(224, 39%, 17%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(224, 39%, 17%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(215, 27%, 32%);
+  --input: hsl(215, 27%, 32%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 84%, 5%);
+  --secondary: hsl(215, 27%, 32%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(215, 27%, 32%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.5rem;
+  
+  /* Custom portfolio colors */
+  --dark-primary: hsl(221, 39%, 11%);
+  --dark-secondary: hsl(220, 13%, 18%);
+  --dark-tertiary: hsl(215, 25%, 27%);
+  --blue-accent: hsl(217, 91%, 60%);
+  --cyan-accent: hsl(188, 94%, 43%);
+  --green-accent: hsl(158, 64%, 52%);
+}
+
+.dark {
+  --background: hsl(221, 39%, 11%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(215, 20%, 65%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(224, 39%, 17%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(224, 39%, 17%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(215, 27%, 32%);
+  --input: hsl(215, 27%, 32%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 84%, 5%);
+  --secondary: hsl(215, 27%, 32%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(215, 27%, 32%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased;
+    background-color: var(--dark-primary);
+    color: white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .bg-dark-primary {
+    background-color: var(--dark-primary);
+  }
+
+  .bg-dark-secondary {
+    background-color: var(--dark-secondary);
+  }
+
+  .bg-dark-tertiary {
+    background-color: var(--dark-tertiary);
+  }
+
+  .text-blue-accent {
+    color: var(--blue-accent);
+  }
+
+  .text-cyan-accent {
+    color: var(--cyan-accent);
+  }
+
+  .text-green-accent {
+    color: var(--green-accent);
+  }
+
+  .bg-blue-accent {
+    background-color: var(--blue-accent);
+  }
+
+  .bg-cyan-accent {
+    background-color: var(--cyan-accent);
+  }
+
+  .bg-green-accent {
+    background-color: var(--green-accent);
+  }
+
+  .border-blue-accent {
+    border-color: var(--blue-accent);
+  }
+
+  .border-cyan-accent {
+    border-color: var(--cyan-accent);
+  }
+
+  .border-green-accent {
+    border-color: var(--green-accent);
+  }
+
+  .hover\:bg-blue-accent:hover {
+    background-color: var(--blue-accent);
+  }
+
+  .hover\:text-blue-accent:hover {
+    color: var(--blue-accent);
+  }
+
+  .hover\:text-cyan-accent:hover {
+    color: var(--cyan-accent);
+  }
+
+  .hover\:text-green-accent:hover {
+    color: var(--green-accent);
+  }
+
+  .hover\:border-blue-accent:hover {
+    border-color: var(--blue-accent);
+  }
+}
