@@ -182,12 +182,13 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-if (sectionRef.current instanceof HTMLElement) {
-  const offset = sectionRef.current.offsetTop;
-  window.scrollTo({ top: offset, behavior: "smooth" });
-}
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element instanceof HTMLElement) {
+    const offset = element.offsetTop;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  }
+};
 
     setMobileMenuOpen(false);
   };
