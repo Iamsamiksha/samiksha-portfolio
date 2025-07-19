@@ -9,7 +9,6 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 
-
 interface ContactFormData {
   name: string;
   email: string;
@@ -185,13 +184,11 @@ export default function Home() {
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      const offsetTop = element.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
+if (sectionRef.current instanceof HTMLElement) {
+  const offset = sectionRef.current.offsetTop;
+  window.scrollTo({ top: offset, behavior: "smooth" });
+}
+
     setMobileMenuOpen(false);
   };
 
