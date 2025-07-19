@@ -60,8 +60,9 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border);
   }
+
 
   body {
     @apply font-inter antialiased;
