@@ -839,4 +839,4 @@ const scrollToSection = (sectionId: string) => {
       </footer>
     </div>
   );
-}
+
